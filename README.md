@@ -1,6 +1,6 @@
 ## test:
-`middleman`
-`open localhost:4567`
+* `middleman`
+* `open localhost:4567`
 
 ## build:
 `rake build`
