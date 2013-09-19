@@ -2,10 +2,13 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.1.5"
+gem "middleman",          "~>3.1.5"
 
 # easy publish
-gem 'middleman-gh-pages'
+gem 'middleman-gh-pages', "~> 0.0.2"
+
+# views
+gem "bootstrap-sass",     "~> 2.3.2.2"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
