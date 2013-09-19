@@ -4,6 +4,9 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.1.5"
 
+# easy publish
+gem 'middleman-gh-pages'
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
