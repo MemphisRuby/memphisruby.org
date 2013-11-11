@@ -2,7 +2,7 @@
 title: Welcome to the Memphis Ruby Users Group!
 ---
 
-.container.text-center
+.container.text-center.pull-right
   %h1
     Welcome to the Memphis Ruby Users Group!
   %p
