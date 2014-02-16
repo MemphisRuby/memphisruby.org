@@ -2,14 +2,44 @@
 title: Welcome to the Memphis Ruby Users Group!
 ---
 
-.container.text-center
-  %h1
-    Welcome to the Memphis Ruby Users Group!
-  %p
-    Details on upcoming meetings available at
-    %a{ href: "http://www.meetup.com/memphis-technology-user-groups" }
-      Memphis Technology User Groups
-    on Meetup.com. 
+.container
+  .span10.offset1
+    .text-center
+      %a{href: "//memphisruby.org"}
+        %img{ src: "/images/memphis_ruby.png", alt: "Memphis Ruby"}
+      %h1 Welcome to the Memphis Ruby Users Group!
+      %p
+        We are a software users group interested in topics related to the 
+        programming language, 
+        %a{href:'//www.ruby-lang.org/'} Ruby. 
+        We have monthly meetups at various locations throughout the 
+        Greater Memphis Area. We usually have two presentations each month, given by local
+        practicioners. Our members and topics range from novice to expert, and we 
+        welcome newcomers!
+  .span4.offset4
+    %h3.text-center Learn More
+    %dl
+      %dt 
+        Upcoming Meetings, Agendas, and RSVPs
+      %dd
+        %a{ href: "http://www.meetup.com/memphis-technology-user-groups" }
+          Memphis Technology User Groups on Meetup.com
+      %dt
+        Mailing List and Forum
+      %dd
+        %a{ href: "//groups.google.com/forum/#!forum/memphisruby" } Memphis Ruby on Google Groups
+      %dt
+        Updates on Twitter
+      %dd
+        %a{ href: "//twitter.com/MemphisRuby" } @MemphisRuby
+      %dt
+        Upcoming Topics Discussion
+      %dd
+        %a{ href: "//memphisruby.uservoice.com/forums/237158-memphis-ruby-topic-requests-proposals-and-genera" } uservoice.com
+      %dt
+        IRC Channel
+      %dd
+        %a{ href: "//irc.freenode.net/#MemphisRuby" } #MemphisRuby on freenode.net
 
-  = partial 'layouts/tweet_stream'
+  .text-center= partial 'layouts/tweet_stream'
   = partial 'layouts/github_ribbon'
