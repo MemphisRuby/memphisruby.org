@@ -1,0 +1,10 @@
+.row
+	.meetings.twelve.columns
+		-blog.articles.each do |article|
+			.row
+				.meeting.twelve.columns
+					.date.text-centered
+						%h3=article.date.strftime("%B %e, %Y")
+					.body
+						%p
+							=article.body

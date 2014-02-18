@@ -4,6 +4,7 @@ gem "middleman",          "~>3.2.2"
 
 # easy publish
 gem 'middleman-gh-pages', "~> 0.0.3"
+gem 'middleman-blog'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.1"

@@ -37,6 +37,16 @@
 
 # Reload the browser automatically whenever files change
 activate :livereload
+activate :blog do |blog|
+  blog.prefix = "meetings"
+  blog.permalink = "{month}-{day}-{year}"
+  blog.layout = "layouts/meeting"
+  blog.default_extension = ".md"
+  blog.taglink = "categories/:tag.html"
+  blog.paginate = true
+  blog.page_link = "p:num"
+  blog.per_page = 3
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -44,7 +54,7 @@ activate :livereload
 #     "Helping"
 #   end
 # end
-
+page "/feed.xml", layout: false
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

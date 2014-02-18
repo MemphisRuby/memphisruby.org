@@ -21,35 +21,43 @@ title: Welcome to the Memphis Ruby Users Group!
           Greater Memphis Area. We usually have two presentations each month, given by local
           practicioners. Our members and topics range from novice to expert, and we 
           welcome newcomers!
+    %br
     .row
-      .twelve.columns.text-centered
-        %h3 Join Us!
-    .row
-      .six.columns.push_three
-        %dl
-          %dt 
-            Upcoming Meetings, Agendas, and RSVPs
-          %dd
-            %a{ href: "http://www.meetup.com/memphis-technology-user-groups" }
-              Memphis Technology User Groups on Meetup.com
-          %dt
-            Mailing List and Forum
-          %dd
-            %a{ href: "//groups.google.com/forum/#!forum/memphisruby" } Memphis Ruby on Google Groups
-          %dt
-            Updates on Twitter
-          %dd
-            %a{ href: "//twitter.com/MemphisRuby" } @MemphisRuby
-          %dt
-            Upcoming Topics Discussion
-          %dd
-            %a{ href: "//memphisruby.uservoice.com/forums/237158-memphis-ruby-topic-requests-proposals-and-genera" } uservoice.com
-          %dt
-            IRC Channel
-          %dd
-            %a{ href: "//irc.freenode.net/#MemphisRuby" } #MemphisRuby on freenode.net
+      .twelve.columns
+        %h2.text-centered
+          Meetings
+        =partial "meetings/meetings"
+    .six.columns.join-us
+      .twelve.columns
+        .row
+          .twelve.columns.text-centered
+            %h3 Join Us!
+        .row
+          .twelve.columns
+            %dl
+              %dt 
+                Upcoming Meetings, Agendas, and RSVPs
+              %dd
+                %a{ href: "http://www.meetup.com/memphis-technology-user-groups" }
+                  Memphis Technology User Groups on Meetup.com
+              %dt
+                Mailing List and Forum
+              %dd
+                %a{ href: "//groups.google.com/forum/#!forum/memphisruby" } Memphis Ruby on Google Groups
+              %dt
+                Updates on Twitter
+              %dd
+                %a{ href: "//twitter.com/MemphisRuby" } @MemphisRuby
+              %dt
+                Upcoming Topics Discussion
+              %dd
+                %a{ href: "//memphisruby.uservoice.com/forums/237158-memphis-ruby-topic-requests-proposals-and-genera" } uservoice.com
+              %dt
+                IRC Channel
+              %dd
+                %a{ href: "//irc.freenode.net/#MemphisRuby" } #MemphisRuby on freenode.net
 
-  .row
-    .twelve.columns.text-centered
-      = partial 'layouts/tweet_stream'
+    .row
+      .six.columns.text-centered.twitter-feed
+        = partial 'layouts/tweet_stream'
 = partial 'layouts/github_ribbon'
