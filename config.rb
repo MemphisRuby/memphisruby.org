@@ -39,7 +39,7 @@
 activate :livereload
 activate :blog do |blog|
   blog.prefix = "posts"
-  blog.permalink = "{year}/{title}"
+  blog.permalink = "{year}/{title}.html"
   blog.layout = "layouts/post"
   blog.default_extension = ".md"
   blog.taglink = "tags/:tag.html"
