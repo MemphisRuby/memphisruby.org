@@ -20,9 +20,13 @@ localhost:4567`. It will refresh automatically as you change files.
 You can build out the site with `rake build`, but you probably won't need this.
 This happens when you run the development server, and when you publish (below).
 
+## Create a new article
+
+`middleman article TITLE`
+
 ## Publish
 
-Once your happy with your changes, commit them and run `rake publish`, which 
+Once you're happy with your changes, commit them and run `rake publish`, which 
 will run the build step, add all the files to the 'gh-pages' branch and push.
 
 ## Adding Dependencies
