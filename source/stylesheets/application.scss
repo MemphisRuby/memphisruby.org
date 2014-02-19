@@ -5,12 +5,13 @@
 	text-align: center;
 }
 
-.meeting{
+.post{
 	background-color: #F2F2F2;
 	&:nth-child(even){
 		background-color: white;
 	}
-	padding: 30px;
+	padding: 5px 30px;
+    margin-bottom: 30px;
 }
 
 .twitter-feed{
@@ -19,4 +20,9 @@
 
 .six.columns.join-us{
 	margin-top: 25px;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: disc;
 }

@@ -13,6 +13,8 @@ gem "middleman-livereload", "~> 3.1.1"
 gem "compass",        "~> 0.12.2"
 gem "modular-scale",  "~> 1.0.6"
 
+gem "pry",            "~> 0.9.12.6"
+
 # For faster file watcher updates on Windows:
 platforms :mswin, :mingw do
   gem "wdm", "~> 0.1.0"

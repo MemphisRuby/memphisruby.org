@@ -38,11 +38,11 @@
 # Reload the browser automatically whenever files change
 activate :livereload
 activate :blog do |blog|
-  blog.prefix = "meetings"
-  blog.permalink = "{month}-{day}-{year}"
-  blog.layout = "layouts/meeting"
+  blog.prefix = "posts"
+  blog.permalink = "{year}/{title}"
+  blog.layout = "layouts/post"
   blog.default_extension = ".md"
-  blog.taglink = "categories/:tag.html"
+  blog.taglink = "tags/:tag.html"
   blog.paginate = true
   blog.page_link = "p:num"
   blog.per_page = 3
