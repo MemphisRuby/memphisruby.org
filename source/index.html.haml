@@ -23,8 +23,14 @@ title: Welcome to the Memphis Ruby Users Group!
           welcome newcomers!
     %br
     .row
+      .ten.columns.push_one
+        %h3.text-centered Join Us for the Next Meeting!
+        .post= partial "shared/next_event"
+
+    %br
+    .row
       .twelve.columns
-        %h2.text-centered
+        %h3.text-centered
           Meetings & Updates
         =partial "posts/posts"
     .six.columns.join-us

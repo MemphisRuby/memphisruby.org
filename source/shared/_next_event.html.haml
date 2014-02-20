@@ -1,0 +1,10 @@
+.event-app{'ng-app' => 'eventApp'}
+  .event-ctrl{'ng-controller' => 'eventCtrl'}
+    %h3.text-centered.title
+      %a{href: '{{ event.event_url }}', target: '_blank'} {{ event.name }}
+    %h6.text-centered.details
+      {{ date }} — {{ event.venue.name }} —
+      %a{href: '{{ event.event_url }}', target: '_blank'} 
+        {{ event.yes_rsvp_count}} RSVPS
+    %br
+    .body{'ng-bind-html' => 'description'}

@@ -2,24 +2,24 @@
 @import "gumby/sass/gumby";
 
 .text-centered{
-	text-align: center;
+  text-align: center;
 }
 
 .post{
-	background-color: #F2F2F2;
-	&:nth-child(even){
-		background-color: white;
-	}
-	padding: 5px 30px;
-    margin-bottom: 30px;
+  background-color: #F5F5F5;
+  &:nth-child(even){
+    background-color: #FAFAFA;
+  }
+  padding: 5px 30px;
+  margin-bottom: 30px;
 }
 
 .twitter-feed{
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .six.columns.join-us{
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 ul {
