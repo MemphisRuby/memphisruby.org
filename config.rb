@@ -61,6 +61,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+
+ignore 'vendor/*'
+
 # Add bower components dir to sprockets path
 ready do
   sprockets.append_path File.join root, 'source/vendor'
