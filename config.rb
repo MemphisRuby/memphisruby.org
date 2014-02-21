@@ -61,7 +61,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-
 ignore 'vendor/*'
 
 # Add bower components dir to sprockets path
@@ -75,7 +74,8 @@ configure :build do
   activate :minify_css, ignore: 'vendor/*'
 
   # Minify Javascript on build
-  activate :minify_javascript, ignore: 'vendor/*'
+  require 'uglifier'
+  activate :minify_javascript, compressor: Uglifier.new(mangle: false)
 
   # Enable cache buster
   # activate :asset_hash
