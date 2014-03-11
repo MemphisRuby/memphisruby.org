@@ -1,0 +1,14 @@
+!!!HTML
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ 'http-equiv' => 'X-UA-Compatible', content: "IE=edge,chrome=1" }
+    %title= page_title
+    %meta{ name: 'description', content: page_description }
+    = stylesheet_link_tag "application"
+    = javascript_include_tag  "application"
+  %body{ class: page_classes }
+    = partial 'shared/header'
+    .row
+      .twelve.columns= yield
+    = partial 'shared/footer'

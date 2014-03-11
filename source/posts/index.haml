@@ -1,0 +1,7 @@
+---
+title: Memphis Ruby Posts and Meeting Updates
+---
+%h2.text-centered Posts and Meeting Updates
+- blog.articles.each do |article|
+  .row
+    .well= partial "posts/post", locals: { article: article }

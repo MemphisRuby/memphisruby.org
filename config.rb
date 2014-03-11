@@ -1,3 +1,5 @@
+require 'helpers/meta_helpers'
+helpers MetaHelpers
 ###
 # Compass
 ###

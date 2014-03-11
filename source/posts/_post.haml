@@ -1,23 +1,21 @@
-- article = locals.fetch(:article)
-.post.twelve.columns
-  .text-centered
-    %h3
-      %a{ href: article.url }
-        =article.title
+.text-centered
+  %h3
+    %a{ href: article.url }
+      =article.title
 
-  .date.text-centered
-    %h6
-      %a{ href: article.data.fetch("author_url", '/')}
-        = article.data.fetch("author", 'MemphisRuby')
-      —
-      = article.date.strftime("%B %e, %Y")
-  .body
-    %p
-      =article.body
+.date.text-centered
+  %h6
+    %a{ href: article.data.fetch("author_url", '/')}
+      = article.data.fetch("author", 'MemphisRuby')
+    —
+    = article.date.strftime("%B %e, %Y")
+.body
+  %p
+    =article.body
 
-  .row.text-centered
-    Tagged:
-    - article.tags.each do |t|
-      =t
-      -# Needs a tag template before this can render
-      -#%a{ href: tag_path(t) }=t
+.row.text-centered
+  Tagged:
+  - article.tags.each do |t|
+    =t
+    -# Needs a tag template before this can render
+    -#%a{ href: tag_path(t) }=t
