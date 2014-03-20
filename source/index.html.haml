@@ -22,6 +22,6 @@ title: 'Welcome to Memphis Ruby!'
       %a{ href: '/posts' } Meetings & Updates
     .row
       .posts.list.twelve.columns
-        - blog.articles.first(3).each do |article|
+        - blog.articles.first(2).each do |article|
           .row
             .well= partial "posts/post", locals: { article: article }

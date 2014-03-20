@@ -5,7 +5,7 @@
 
 .date.text-centered
   %h6
-    %a{ href: article.data.fetch("author_url", '/')}
+    %a{ href: article.data.fetch("author_url", '/'), rel: 'author' }
       = article.data.fetch("author", 'MemphisRuby')
     —
     = article.date.strftime("%B %e, %Y")
