@@ -8,14 +8,14 @@
     <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="/javascripts/application.js" type="text/javascript"></script>
   </head>
-  <body class='posts posts_2014 posts_2014_february-meetup-recap'>
+  <body class='posts posts_february-meetup-recap'>
     <header class='row'>
       <div class='twelve columns text-centered'>
-        <a href='//memphisruby.org'>
+        <a href='/'>
           <img alt='Memphis Ruby' src='/images/memphis_ruby.png'>
         </a>
         <h2 class='title'>
-          <a href='//memphisruby.org'>
+          <a href='/'>
             <span class='memphis'>Memphis</span>
             <span class='ruby'>Ruby</span>
           </a>
@@ -30,51 +30,45 @@
     <div class='row'>
       <div class='twelve columns'>
         <div class='text-centered'>
-          <h3>
-            <a href='/posts/2014/february-meetup-recap.html'>
-              February Meetup Recap
-            </a>
-          </h3>
+          <h2>February Meetup Recap</h2>
         </div>
         <div class='date text-centered'>
-          <h6>
+          <h4>
             <a href='http://dpritchett.net' rel='author'>
               Daniel Pritchett
             </a>
             —
             February 19, 2014
-          </h6>
+          </h4>
         </div>
+        <br>
         <div class='body'>
-          <p>
-            <p>Last night's meetup went off well - thanks Jessica and Daniel for presenting and thanks everyone for attending!</p>
-            
-            <h4 id="presentations">Presentations</h4>
-            
-            <ul>
-              <li>
-                <p>Jessica's slides are up for her <a href="http://slid.es/biggles/scoped-user-group-invitation-system-for-rails">Scoped Invitations for User Group</a> presentation.  She's also <a href="https://gist.github.com/jlegosama/9026919">posted some of the code as a gist</a>.    </p>
-              </li>
-              <li>
-                <p>Daniel had to improvise his gem presentation somewhat due to time constraints so there's no slideshow.  The gem itself is up on RubyGems for you to check out as <a href="http://rubygems.org/gems/whateverman">whateverman</a>.</p>
-              </li>
-            </ul>
-            
-            <h4 id="memphisruby-library">MemphisRuby Library</h4>
-            <p>We've just received our first publisher-donated books from Informit's <a href="http://www.informit.com/promotions/addison-wesley-professional-ruby-series-135393">Professional Ruby</a> series.  Contact me if you'd like access to Eloquent Ruby, Practical Object-Oriented Design in Ruby (My personal favorite!), or Rails Tutorial.  I'll need to create a public spreadsheet for listing and tracking the library contents.  Volunteers welcome.</p>
-            
-            <h4 id="housekeeping">Housekeeping</h4>
-            <p>Check out our <strong>sweet</strong> new website!  Thanks <a href="https://twitter.com/mystic77892">Keith Mattix</a> and <a href="http://joshwlewis.com">Josh Lewis</a> for all your hard work.  Click the red github banner at the top of this page to submit your own enhancements or new blog posts.</p>
-            
-            <p>Don't forget to sign up for the MemphisRuby mailing list!  You can also swing by #memphisruby on <a href="http://webchat.freenode.net">freenode</a>.  Links to these are at the bottom of the Memphis Ruby homepage.</p>
-          </p>
+          <p>Last night's meetup went off well - thanks Jessica and Daniel for presenting and thanks everyone for attending!</p>
+          
+          <h4 id="presentations">Presentations</h4>
+          
+          <ul>
+            <li>
+              <p>Jessica's slides are up for her <a href="http://slid.es/biggles/scoped-user-group-invitation-system-for-rails">Scoped Invitations for User Group</a> presentation.  She's also <a href="https://gist.github.com/jlegosama/9026919">posted some of the code as a gist</a>.    </p>
+            </li>
+            <li>
+              <p>Daniel had to improvise his gem presentation somewhat due to time constraints so there's no slideshow.  The gem itself is up on RubyGems for you to check out as <a href="http://rubygems.org/gems/whateverman">whateverman</a>.</p>
+            </li>
+          </ul>
+          
+          <h4 id="memphisruby-library">MemphisRuby Library</h4>
+          <p>We've just received our first publisher-donated books from Informit's <a href="http://www.informit.com/promotions/addison-wesley-professional-ruby-series-135393">Professional Ruby</a> series.  Contact me if you'd like access to Eloquent Ruby, Practical Object-Oriented Design in Ruby (My personal favorite!), or Rails Tutorial.  I'll need to create a public spreadsheet for listing and tracking the library contents.  Volunteers welcome.</p>
+          
+          <h4 id="housekeeping">Housekeeping</h4>
+          <p>Check out our <strong>sweet</strong> new website!  Thanks <a href="https://twitter.com/mystic77892">Keith Mattix</a> and <a href="http://joshwlewis.com">Josh Lewis</a> for all your hard work.  Click the red github banner at the top of this page to submit your own enhancements or new blog posts.</p>
+          
+          <p>Don't forget to sign up for the MemphisRuby mailing list!  You can also swing by #memphisruby on <a href="http://webchat.freenode.net">freenode</a>.  Links to these are at the bottom of the Memphis Ruby homepage.</p>
         </div>
         <div class='row text-centered'>
-          Tagged:
-          ruby
-          rails
-          rubygems
-          books
+          <h4>
+            Tagged:
+            <a href="/posts/tags/ruby">ruby</a>, <a href="/posts/tags/rails">rails</a>, <a href="/posts/tags/rubygems">rubygems</a>, <a href="/posts/tags/books">books</a>
+          </h4>
         </div>
       </div>
     </div>
