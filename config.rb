@@ -1,5 +1,7 @@
 require 'helpers/meta_helpers'
+require 'helpers/tag_helpers'
 helpers MetaHelpers
+helpers TagHelpers
 ###
 # Compass
 ###
@@ -41,10 +43,11 @@ helpers MetaHelpers
 activate :livereload
 activate :blog do |blog|
   blog.prefix = "posts"
-  blog.permalink = "{year}/{title}.html"
   blog.layout = "layouts/post"
+  blog.permalink = ":title"
   blog.default_extension = ".md"
-  blog.taglink = "tags/:tag.html"
+  blog.taglink = "tags/:tag"
+  blog.tag_template = "posts/tags/tag.html"
   blog.paginate = true
   blog.page_link = "p:num"
   blog.per_page = 3

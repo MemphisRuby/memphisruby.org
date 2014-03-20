@@ -1,2 +1,17 @@
 = wrap_layout :layout do
-  = partial "posts/post", locals: { article: current_article }
+  .text-centered
+    %h2= current_article.title
+
+  .date.text-centered
+    %h4
+      %a{ href: current_article.data.fetch("author_url", '/'), rel: 'author' }
+        = current_article.data.fetch("author", 'MemphisRuby')
+      —
+      = current_article.date.strftime("%B %e, %Y")
+  %br
+  .body= yield
+
+  .row.text-centered
+    %h4
+      Tagged:
+      = tag_links(current_article.tags)

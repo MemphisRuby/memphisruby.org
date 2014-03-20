@@ -1,21 +1,17 @@
 .text-centered
   %h3
-    %a{ href: article.url }
-      =article.title
+    %a{ href: article.url }= article.title
 
 .date.text-centered
   %h6
-    %a{ href: article.data.fetch("author_url", '/'), rel: 'author' }
+    %a{ href: article.data.fetch("author_url", '/') }
       = article.data.fetch("author", 'MemphisRuby')
     —
     = article.date.strftime("%B %e, %Y")
-.body
-  %p
-    =article.body
+%br
+.body= article.body
 
 .row.text-centered
-  Tagged:
-  - article.tags.each do |t|
-    =t
-    -# Needs a tag template before this can render
-    -#%a{ href: tag_path(t) }=t
+  %h5
+    Tagged:
+    = tag_links(article.tags)

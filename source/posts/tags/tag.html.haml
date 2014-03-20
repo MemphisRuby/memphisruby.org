@@ -1,0 +1,4 @@
+%h2.text-centered= "Memphis Ruby Posts Tagged: #{tagname}"
+- page_articles.each do |article|
+  .row
+    .well= partial "posts/post", locals: { article: article }

@@ -37,6 +37,9 @@ p.lead {
 }
 
 ul {
+  &.no-disc {
+    list-style-type: none;
+  }
   list-style-position: inside;
   list-style-type: disc;
 }

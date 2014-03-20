@@ -1,0 +1,9 @@
+---
+title: Memphis Ruby Tags
+---
+
+%h2.text-centered Post Tags
+%ul.text-centered.no-disc
+  - blog.tags.each do |tag, articles|
+    %li
+      %a{ href: tag_path(tag) }= "#{tag} (#{articles.count} Posts)"
