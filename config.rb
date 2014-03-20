@@ -53,12 +53,8 @@ activate :blog do |blog|
   blog.per_page = 3
 end
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+activate :directory_indexes
+
 page "/feed.xml", layout: false
 set :css_dir, 'stylesheets'
 
