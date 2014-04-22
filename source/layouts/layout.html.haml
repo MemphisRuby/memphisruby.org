@@ -5,6 +5,9 @@
     %meta{ 'http-equiv' => 'X-UA-Compatible', content: "IE=edge,chrome=1" }
     %title= page_title
     %meta{ name: 'description', content: page_description }
+    %link{rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon'}
+    - [76, 120, 152].each do |size|
+      %link{rel: 'apple-touch-icon', sizes: "#{size}x#{size}", href: "/apple-touch-icon-#{size}x#{size}.png"}
     = stylesheet_link_tag "application"
     = javascript_include_tag  "application"
   %body{ class: page_classes }
