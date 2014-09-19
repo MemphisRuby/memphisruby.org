@@ -9,7 +9,7 @@
     —
     = article.date.strftime("%B %e, %Y")
 %br
-.body= article.body
+.body= preserve(article.body)
 
 .row.text-centered
   %h5

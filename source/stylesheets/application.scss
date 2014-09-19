@@ -1,5 +1,14 @@
 @import "normalize-scss/normalize";
 @import "gumby/sass/gumby";
+@import "github-pygment";
+
+code.highlight {
+  display: block;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: rgba(0,0,0,0.025);
+  border: 1px solid rgba(0,0,0,0.1);
+}
 
 header.row {
   margin-top: 20px;

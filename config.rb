@@ -39,6 +39,11 @@ helpers TagHelpers
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
+activate :syntax
+
 # Reload the browser automatically whenever files change
 activate :livereload
 activate :blog do |blog|

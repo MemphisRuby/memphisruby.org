@@ -9,6 +9,11 @@ gem 'middleman-blog'
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.1"
 
+gem "redcarpet"
+
+# Syntax highlighting
+gem "middleman-syntax",     "~> 2.0.0"
+
 # === Gumby Requirements ===
 gem "compass",        "~> 0.12.2"
 gem "modular-scale",  "~> 1.0.6"
