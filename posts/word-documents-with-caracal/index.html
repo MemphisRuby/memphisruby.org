@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <title>Generating Word Documents with Caracal | Memphis Ruby Users Group</title>
+    <meta content='Generating Word Documents with Caracal | Memphis Ruby is a technology user group in the greater Memphis, TN area focused on the Ruby programming language.' name='description'>
+    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+    <link href='/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+    <link href='/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+    <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+  </head>
+  <body class='posts posts_word-documents-with-caracal posts_word-documents-with-caracal_index'>
+    <header class='row'>
+      <div class='twelve columns text-centered'>
+        <a href='/'>
+          <img alt='Memphis Ruby' src='/images/memphis_ruby.png'>
+        </a>
+        <h2 class='title'>
+          <a href='/'>
+            <span class='memphis'>Memphis</span>
+            <span class='ruby'>Ruby</span>
+          </a>
+        </h2>
+      </div>
+      <div id='github-ribbon'>
+        <a href='https://github.com/memphisruby'>
+          <img alt='Fork me on GitHub' src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png'>
+        </a>
+      </div>
+    </header>
+    <div class='row'>
+      <div class='twelve columns'>
+        <div class='text-centered'>
+          <h2>Generating Word Documents with Caracal</h2>
+        </div>
+        <div class='date text-centered'>
+          <h4>
+            <a href='http://joshwlewis.com' rel='author'>
+              Josh W. Lewis
+            </a>
+            —
+            August 19, 2014
+          </h4>
+        </div>
+        <br>
+        <div class='body'>
+          <p>This month, we had another fun an informative
+          <a href="http://www.meetup.com/memphis-technology-user-groups/events/199125962/">meetup</a>
+          at
+          <a href="//coroutine.com">Coroutine</a>. Just one presentation this time, but a good one:</p>
+          
+          <h4>Generating Word Documents with Caracal</h4>
+          
+          <p><a href="//twitter.com/jpdugan">John Dugan</a> gave us a great walkthrough of
+          <a href="//github.com/trade-informatics/caracal">Caracal</a>. It&rsquo;s an open source library
+          for generating Microsoft Word documents with an HTML-like Ruby API. Caracal 
+          lets you build word documents like this:</p>
+          <pre><code class="highlight ruby"><span class="no">Caracal</span><span class="o">::</span><span class="no">Document</span><span class="p">.</span><span class="nf">save</span> <span class="s1">'example.docx'</span> <span class="k">do</span> <span class="o">|</span><span class="n">docx</span><span class="o">|</span>
+            <span class="c1"># page 1</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">h1</span> <span class="s1">'Some Title'</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">hr</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">h2</span> <span class="s1">'Some Section'</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">p</span>  <span class="s1">'Lorem ipsum dolor....'</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">table</span> <span class="vi">@my_data</span><span class="p">,</span> <span class="ss">border_size: </span><span class="mi">4</span> <span class="k">do</span>
+              <span class="n">cell_style</span> <span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="ss">background: </span><span class="s1">'cccccc'</span><span class="p">,</span> <span class="ss">bold: </span><span class="kp">true</span>
+            <span class="k">end</span>
+          
+            <span class="c1"># page 2</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">page</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">p</span>  <span class="s1">'Lorem ipsum dolor....'</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">ul</span> <span class="k">do</span>
+              <span class="n">li</span> <span class="s1">'Item 1'</span>
+              <span class="n">li</span> <span class="s1">'Item 2'</span>
+            <span class="k">end</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>
+            <span class="n">docx</span><span class="p">.</span><span class="nf">img</span> <span class="n">image_url</span><span class="p">(</span><span class="s1">'graph.png'</span><span class="p">),</span> <span class="ss">width: </span><span class="mi">500</span><span class="p">,</span> <span class="ss">height: </span><span class="mi">300</span>
+          <span class="k">end</span>
+          </code></pre>
+          
+          <p>The review demonstrated the library&rsquo;s functionality but also a good portion of
+          the libraries internal architecture.</p>
+          
+          <p>The overall response was very positive. Caracal appears to be a well thought
+          out library. It has a great API, and it&rsquo;s internals abide by the principles
+          of SOLID.</p>
+          
+          <p>Thanks to all who came, and to <a href="//coroutine.com/">Coroutine</a> for the food
+          and meeting space.</p>
+        </div>
+        <div class='row text-centered'>
+          <h4>
+            Tagged:
+            <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gem/">gem</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <footer class='row'>
+      <div class='six columns'>
+        <h3>Connect with Us!</h3>
+        <div class='row'>
+          <div class='twelve columns'>
+            <dl>
+              <dt>
+                Upcoming Meetings, Agendas, and RSVPs
+              </dt>
+              <dd>
+                <a href='http://www.meetup.com/memphis-technology-user-groups'>
+                  Memphis Technology User Groups on Meetup.com
+                </a>
+              </dd>
+              <dt>
+                Mailing List and Forum
+              </dt>
+              <dd>
+                <a href='//groups.google.com/forum/#!forum/memphisruby'>Memphis Ruby on Google Groups</a>
+              </dd>
+              <dt>
+                Updates on Twitter
+              </dt>
+              <dd>
+                <a href='//twitter.com/MemphisRuby'>@MemphisRuby</a>
+              </dd>
+              <dt>
+                Upcoming Topics Discussion
+              </dt>
+              <dd>
+                <a href='//memphisruby.uservoice.com/forums/237158-memphis-ruby-topic-requests-proposals-and-genera'>uservoice.com</a>
+              </dd>
+              <dt>
+                IRC Channel
+              </dt>
+              <dd>
+                <a href='//irc.freenode.net/#MemphisRuby'>#MemphisRuby on freenode.net</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class='six columns'>
+        <a class='twitter-timeline' data-widget-id='380724981350420480' href='https://twitter.com/MemphisRuby'>
+          Tweets by @MemphisRuby
+        </a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
