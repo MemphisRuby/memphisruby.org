@@ -1,3 +1,8 @@
+$header-link-color:       #CC0033;
+$header-link-hover-color: #990033;
+$body-link-color:         #339999;
+$body-link-hover-color:   #356E6E;
+
 @import "normalize-scss/normalize";
 @import "gumby/sass/gumby";
 @import "github-pygment";
@@ -7,6 +12,7 @@ code.highlight {
   padding: 10px;
   margin-bottom: 12px;
   background: rgba(0,0,0,0.025);
+  border-radius: 7px;
   border: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -16,10 +22,10 @@ header.row {
   .title {
     padding-top: 0px;
     .memphis {
-      color: #6fc6ba;
+      color: $header-link-color;
     }
     .ruby {
-      color: #bb1a40;
+      color: $body-link-color;
     }
   }
   #github-ribbon {
@@ -40,7 +46,9 @@ p.lead {
 }
 
 .well {
-  background-color: #F5F5F5;
+  border-radius: 7px;
+  background: rgba(0,0,0,0.025);
+  border: 1px solid rgba(0,0,0,0.1);
   padding: 10px 30px;
   margin-bottom: 30px;
 }
