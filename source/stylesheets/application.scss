@@ -22,10 +22,10 @@ header.row {
   .title {
     padding-top: 0px;
     .memphis {
-      color: $header-link-color;
+      color: $body-link-color;
     }
     .ruby {
-      color: $body-link-color;
+      color: $header-link-color;
     }
   }
   #github-ribbon {
