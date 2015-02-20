@@ -13,7 +13,7 @@
     <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="/javascripts/application.js" type="text/javascript"></script>
   </head>
-  <body class='posts posts_tags posts_tags_gem posts_tags_gem_index'>
+  <body class='posts posts_tags posts_tags_decorators posts_tags_decorators_index'>
     <header class='row'>
       <div class='twelve columns text-centered'>
         <a href='/'>
@@ -34,7 +34,7 @@
     </header>
     <div class='row'>
       <div class='twelve columns'>
-        <h2 class='text-centered'>Memphis Ruby Posts Tagged: gem</h2>
+        <h2 class='text-centered'>Memphis Ruby Posts Tagged: decorators</h2>
         <div class='row'>
           <div class='well'>
             <div class='text-centered'>
@@ -57,32 +57,6 @@
               <h5>
                 Tagged:
                 <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gem/">gem</a>, <a href="/posts/tags/decorators/">decorators</a>
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='well'>
-            <div class='text-centered'>
-              <h3>
-                <a href='/posts/word-documents-with-caracal/'>Generating Word Documents with Caracal</a>
-              </h3>
-            </div>
-            <div class='date text-centered'>
-              <h6>
-                <a href='http://joshwlewis.com'>
-                  Josh W. Lewis
-                </a>
-                —
-                August 19, 2014
-              </h6>
-            </div>
-            <br>
-            <div class='body'><p>This month, we had another fun an informative&#x000A;<a href="http://www.meetup.com/memphis-technology-user-groups/events/199125962/">meetup</a>&#x000A;at&#x000A;<a href="//coroutine.com">Coroutine</a>. Just one presentation this time, but a good one:</p>&#x000A;&#x000A;<h4>Generating Word Documents with Caracal</h4>&#x000A;&#x000A;<p><a href="//twitter.com/jpdugan">John Dugan</a> gave us a great walkthrough of&#x000A;<a href="//github.com/trade-informatics/caracal">Caracal</a>. It&rsquo;s an open source library&#x000A;for generating Microsoft Word documents with an HTML-like Ruby API. Caracal &#x000A;lets you build word documents like this:</p>&#x000A;<pre><code class="highlight ruby"><span class="no">Caracal</span><span class="o">::</span><span class="no">Document</span><span class="p">.</span><span class="nf">save</span> <span class="s1">'example.docx'</span> <span class="k">do</span> <span class="o">|</span><span class="n">docx</span><span class="o">|</span>&#x000A;  <span class="c1"># page 1</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">h1</span> <span class="s1">'Some Title'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">hr</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">h2</span> <span class="s1">'Some Section'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">p</span>  <span class="s1">'Lorem ipsum dolor....'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">table</span> <span class="vi">@my_data</span><span class="p">,</span> <span class="ss">border_size: </span><span class="mi">4</span> <span class="k">do</span>&#x000A;    <span class="n">cell_style</span> <span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="ss">background: </span><span class="s1">'cccccc'</span><span class="p">,</span> <span class="ss">bold: </span><span class="kp">true</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="c1"># page 2</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">page</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">p</span>  <span class="s1">'Lorem ipsum dolor....'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">ul</span> <span class="k">do</span>&#x000A;    <span class="n">li</span> <span class="s1">'Item 1'</span>&#x000A;    <span class="n">li</span> <span class="s1">'Item 2'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">img</span> <span class="n">image_url</span><span class="p">(</span><span class="s1">'graph.png'</span><span class="p">),</span> <span class="ss">width: </span><span class="mi">500</span><span class="p">,</span> <span class="ss">height: </span><span class="mi">300</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>The review demonstrated the library&rsquo;s functionality but also a good portion of&#x000A;the libraries internal architecture.</p>&#x000A;&#x000A;<p>The overall response was very positive. Caracal appears to be a well thought&#x000A;out library. It has a great API, and it&rsquo;s internals abide by the principles&#x000A;of SOLID.</p>&#x000A;&#x000A;<p>Thanks to all who came, and to <a href="//coroutine.com/">Coroutine</a> for the food&#x000A;and meeting space.</p></div>
-            <div class='row text-centered'>
-              <h5>
-                Tagged:
-                <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gem/">gem</a>
               </h5>
             </div>
           </div>

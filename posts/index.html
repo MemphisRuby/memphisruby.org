@@ -39,6 +39,32 @@
           <div class='well'>
             <div class='text-centered'>
               <h3>
+                <a href='/posts/draper-decorators/'>Model Decorators with Draper</a>
+              </h3>
+            </div>
+            <div class='date text-centered'>
+              <h6>
+                <a href='http://joshwlewis.com'>
+                  Josh W. Lewis
+                </a>
+                —
+                January 28, 2015
+              </h6>
+            </div>
+            <br>
+            <div class='body'><p>This month, we had a great&#x000A;<a href="http://www.meetup.com/memphis-technology-user-groups/events/219491710/">meetup</a>&#x000A;at <a href="//coroutine.com">Coroutine&rsquo;s</a> new office space on Broad Ave.</p>&#x000A;&#x000A;<p><a href="//jasoncharnes.com/">Jason Charnes</a> educated us on how to decorate your models&#x000A;as an alternative to Rails&#39; helper system. A tradidtional Rails view helper&#x000A;might look like this:</p>&#x000A;<pre><code class="highlight ruby"><span class="k">module</span> <span class="nn">ChurchesHelper</span>&#x000A;  <span class="k">def</span> <span class="nf">remove_church_from_name</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>&#x000A;    <span class="nb">name</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">).</span><span class="nf">reject</span><span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="n">e</span> <span class="o">==</span> <span class="s2">"Church"</span> <span class="p">}.</span><span class="nf">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>And you&rsquo;d use it like this:</p>&#x000A;<pre><code class="highlight html">  <span class="nt">&lt;h5&gt;</span><span class="err">&lt;</span>%= remove_church_from_name(c.name) %&gt;<span class="nt">&lt;/h5&gt;</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>This works, and helps keep your code DRY, though you usually end up&#x000A;with long method names, and several concerns mixed into a module.</p>&#x000A;&#x000A;<p><a href="https://github.com/drapergem/draper">Draper</a> is a RubyGem for adding decorating&#x000A;methods to models. With Draper, you can do something like this:</p>&#x000A;<pre><code class="highlight ruby"><span class="k">class</span> <span class="nc">ChurchDecorator</span> <span class="o">&lt;</span> <span class="no">Draper</span><span class="o">::</span><span class="no">Decorator</span>&#x000A;  <span class="k">def</span> <span class="nf">name</span>&#x000A;    <span class="n">model</span><span class="p">.</span><span class="nf">name</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">).</span><span class="nf">reject</span><span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="n">e</span> <span class="o">==</span> <span class="s2">"Church"</span> <span class="p">}.</span><span class="nf">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>Which you can use in your views like this:</p>&#x000A;<pre><code class="highlight html">  <span class="nt">&lt;h5&gt;</span><span class="err">&lt;</span>%= @church.name %&gt;<span class="nt">&lt;/h5&gt;</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>It certainly feels more Object Oriented, and in my book, it&rsquo;s a little clearer.&#x000A;Jason showed us how to get setup with Draper, and explained some of the&#x000A;deeper semantics. Check out Jason&rsquo;s slides <a href="http://slides.com/jasoncharnes/decorators-in-rails-using-draper">here</a>.</p>&#x000A;&#x000A;<p>We concluded the event with an inpromptu editor showdown. Various developers&#x000A;showcased their editors, with varying degrees of success (I hope I didn&rsquo;t&#x000A;turn anyone off on Vim). We saw Vim, Atom, and PHPStorm, and talked about others&#x000A;like Sublime and TextMate.</p>&#x000A;&#x000A;<p>Thanks to <a href="//coroutine.com">Coroutine</a> for the meeting space and the awesome&#x000A;Broadway Pizza.</p></div>
+            <div class='row text-centered'>
+              <h5>
+                Tagged:
+                <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gem/">gem</a>, <a href="/posts/tags/decorators/">decorators</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='well'>
+            <div class='text-centered'>
+              <h3>
                 <a href='/posts/september-meetup-recap/'>September Meetup Recap</a>
               </h3>
             </div>

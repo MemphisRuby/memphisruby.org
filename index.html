@@ -78,6 +78,32 @@
                   <div class='well'>
                     <div class='text-centered'>
                       <h3>
+                        <a href='/posts/draper-decorators/'>Model Decorators with Draper</a>
+                      </h3>
+                    </div>
+                    <div class='date text-centered'>
+                      <h6>
+                        <a href='http://joshwlewis.com'>
+                          Josh W. Lewis
+                        </a>
+                        —
+                        January 28, 2015
+                      </h6>
+                    </div>
+                    <br>
+                    <div class='body'><p>This month, we had a great&#x000A;<a href="http://www.meetup.com/memphis-technology-user-groups/events/219491710/">meetup</a>&#x000A;at <a href="//coroutine.com">Coroutine&rsquo;s</a> new office space on Broad Ave.</p>&#x000A;&#x000A;<p><a href="//jasoncharnes.com/">Jason Charnes</a> educated us on how to decorate your models&#x000A;as an alternative to Rails&#39; helper system. A tradidtional Rails view helper&#x000A;might look like this:</p>&#x000A;<pre><code class="highlight ruby"><span class="k">module</span> <span class="nn">ChurchesHelper</span>&#x000A;  <span class="k">def</span> <span class="nf">remove_church_from_name</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>&#x000A;    <span class="nb">name</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">).</span><span class="nf">reject</span><span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="n">e</span> <span class="o">==</span> <span class="s2">"Church"</span> <span class="p">}.</span><span class="nf">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>And you&rsquo;d use it like this:</p>&#x000A;<pre><code class="highlight html">  <span class="nt">&lt;h5&gt;</span><span class="err">&lt;</span>%= remove_church_from_name(c.name) %&gt;<span class="nt">&lt;/h5&gt;</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>This works, and helps keep your code DRY, though you usually end up&#x000A;with long method names, and several concerns mixed into a module.</p>&#x000A;&#x000A;<p><a href="https://github.com/drapergem/draper">Draper</a> is a RubyGem for adding decorating&#x000A;methods to models. With Draper, you can do something like this:</p>&#x000A;<pre><code class="highlight ruby"><span class="k">class</span> <span class="nc">ChurchDecorator</span> <span class="o">&lt;</span> <span class="no">Draper</span><span class="o">::</span><span class="no">Decorator</span>&#x000A;  <span class="k">def</span> <span class="nf">name</span>&#x000A;    <span class="n">model</span><span class="p">.</span><span class="nf">name</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">).</span><span class="nf">reject</span><span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="n">e</span> <span class="o">==</span> <span class="s2">"Church"</span> <span class="p">}.</span><span class="nf">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>Which you can use in your views like this:</p>&#x000A;<pre><code class="highlight html">  <span class="nt">&lt;h5&gt;</span><span class="err">&lt;</span>%= @church.name %&gt;<span class="nt">&lt;/h5&gt;</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>It certainly feels more Object Oriented, and in my book, it&rsquo;s a little clearer.&#x000A;Jason showed us how to get setup with Draper, and explained some of the&#x000A;deeper semantics. Check out Jason&rsquo;s slides <a href="http://slides.com/jasoncharnes/decorators-in-rails-using-draper">here</a>.</p>&#x000A;&#x000A;<p>We concluded the event with an inpromptu editor showdown. Various developers&#x000A;showcased their editors, with varying degrees of success (I hope I didn&rsquo;t&#x000A;turn anyone off on Vim). We saw Vim, Atom, and PHPStorm, and talked about others&#x000A;like Sublime and TextMate.</p>&#x000A;&#x000A;<p>Thanks to <a href="//coroutine.com">Coroutine</a> for the meeting space and the awesome&#x000A;Broadway Pizza.</p></div>
+                    <div class='row text-centered'>
+                      <h5>
+                        Tagged:
+                        <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gem/">gem</a>, <a href="/posts/tags/decorators/">decorators</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='well'>
+                    <div class='text-centered'>
+                      <h3>
                         <a href='/posts/september-meetup-recap/'>September Meetup Recap</a>
                       </h3>
                     </div>
@@ -96,32 +122,6 @@
                       <h5>
                         Tagged:
                         <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gems/">gems</a>, <a href="/posts/tags/unitwise/">unitwise</a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='well'>
-                    <div class='text-centered'>
-                      <h3>
-                        <a href='/posts/word-documents-with-caracal/'>Generating Word Documents with Caracal</a>
-                      </h3>
-                    </div>
-                    <div class='date text-centered'>
-                      <h6>
-                        <a href='http://joshwlewis.com'>
-                          Josh W. Lewis
-                        </a>
-                        —
-                        August 19, 2014
-                      </h6>
-                    </div>
-                    <br>
-                    <div class='body'><p>This month, we had another fun an informative&#x000A;<a href="http://www.meetup.com/memphis-technology-user-groups/events/199125962/">meetup</a>&#x000A;at&#x000A;<a href="//coroutine.com">Coroutine</a>. Just one presentation this time, but a good one:</p>&#x000A;&#x000A;<h4>Generating Word Documents with Caracal</h4>&#x000A;&#x000A;<p><a href="//twitter.com/jpdugan">John Dugan</a> gave us a great walkthrough of&#x000A;<a href="//github.com/trade-informatics/caracal">Caracal</a>. It&rsquo;s an open source library&#x000A;for generating Microsoft Word documents with an HTML-like Ruby API. Caracal &#x000A;lets you build word documents like this:</p>&#x000A;<pre><code class="highlight ruby"><span class="no">Caracal</span><span class="o">::</span><span class="no">Document</span><span class="p">.</span><span class="nf">save</span> <span class="s1">'example.docx'</span> <span class="k">do</span> <span class="o">|</span><span class="n">docx</span><span class="o">|</span>&#x000A;  <span class="c1"># page 1</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">h1</span> <span class="s1">'Some Title'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">hr</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">h2</span> <span class="s1">'Some Section'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">p</span>  <span class="s1">'Lorem ipsum dolor....'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">table</span> <span class="vi">@my_data</span><span class="p">,</span> <span class="ss">border_size: </span><span class="mi">4</span> <span class="k">do</span>&#x000A;    <span class="n">cell_style</span> <span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="ss">background: </span><span class="s1">'cccccc'</span><span class="p">,</span> <span class="ss">bold: </span><span class="kp">true</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="c1"># page 2</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">page</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">p</span>  <span class="s1">'Lorem ipsum dolor....'</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">ul</span> <span class="k">do</span>&#x000A;    <span class="n">li</span> <span class="s1">'Item 1'</span>&#x000A;    <span class="n">li</span> <span class="s1">'Item 2'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">br</span>&#x000A;  <span class="n">docx</span><span class="p">.</span><span class="nf">img</span> <span class="n">image_url</span><span class="p">(</span><span class="s1">'graph.png'</span><span class="p">),</span> <span class="ss">width: </span><span class="mi">500</span><span class="p">,</span> <span class="ss">height: </span><span class="mi">300</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>&#x000A;&#x000A;<p>The review demonstrated the library&rsquo;s functionality but also a good portion of&#x000A;the libraries internal architecture.</p>&#x000A;&#x000A;<p>The overall response was very positive. Caracal appears to be a well thought&#x000A;out library. It has a great API, and it&rsquo;s internals abide by the principles&#x000A;of SOLID.</p>&#x000A;&#x000A;<p>Thanks to all who came, and to <a href="//coroutine.com/">Coroutine</a> for the food&#x000A;and meeting space.</p></div>
-                    <div class='row text-centered'>
-                      <h5>
-                        Tagged:
-                        <a href="/posts/tags/ruby/">ruby</a>, <a href="/posts/tags/gem/">gem</a>
                       </h5>
                     </div>
                   </div>
