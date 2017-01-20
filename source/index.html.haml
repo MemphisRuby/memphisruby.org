@@ -5,11 +5,11 @@ title: 'Welcome to Memphis Ruby!'
 .row
   .ten.columns.push_one
     %p.lead
-      The Memphis Ruby Users Group is a software group interested in topics related to the 
+      The Memphis Ruby Users Group is a software group interested in topics related to the
       %a{href:'//www.ruby-lang.org/'} Ruby
-      programming language. We have monthly meetups at various locations 
-      throughout the Greater Memphis Area. We usually have two presentations 
-      each month, given by local practitioners. Our members and topics range 
+      programming language. We have monthly meetups at various locations
+      throughout the Greater Memphis Area. We a presentation
+      each month, given by a local practitioner. Our members and topics range
       from novice to expert, and we welcome newcomers.
 
 .row
@@ -17,11 +17,11 @@ title: 'Welcome to Memphis Ruby!'
     .well= partial "shared/next_event"
 
 .row
-  .twelve.columns
-    %h3.text-centered 
-      %a{ href: '/posts' } Meetings & Updates
+  .ten.columns.push_one
+    %h3.text-centered
+      %a{ href: '/posts' } Recent Meetings & Updates
     .row
-      .posts.list.twelve.columns
-        - blog.articles.first(2).each do |article|
+      .posts.list.twelve.columns.well
+        - blog.articles.first(5).each do |article|
           .row
-            .well= partial "posts/post", locals: { article: article }
+            = partial "posts/snippet", locals: { article: article }
